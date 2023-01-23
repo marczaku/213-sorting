@@ -38,7 +38,7 @@ How long would it take a smart algorithm to find ANY of these 1 Million Citizen 
 <details>
   <summary>Solution</summary>
   
-- A maximum of 20ms. NO WAY!! Yes, indeed.
+- A maximum of 20ms. Yes, that's a crazy improvement.
 </details>
 
 That's how powerful sorted lists can be. And smart Algorithms. Now, that you have understood the importance of these, let's look at how we can get our stuff sorted.
