@@ -56,6 +56,15 @@ end procedure
 
 </details>
 
+## Classification
+- unstable: elements with same value do not maintain relative order to each other
+- inplace: we do not allocate additional memory
+  - but: it is a recursive function, so it requires stack memory for each function call (log n)
+- requires efficient random access (bad for linked lists)
+- complexity: average case: n log n (e.g. 1000: 1000 * log(1000) = 1000 * 10 = 10.000)
+- worst case: n^2 (like selection sort), but it is extremely unlikely (e.g. 1000: 1000 * 1000 = 1.000.000)
+  - same as selection sort
+
 ## Divide et Impera
 > Divide and rule
 - In Programming and Politics used as "Divide and Conquer".
