@@ -14,43 +14,25 @@ Idea:
   <summary>Pseudo-Code</summary>
 
 ```
-function partitionFunc(left, right, pivot)
-   leftPointer = left
-   rightPointer = right - 1
+procedure quicksort(list, low, high)
+    if low < high then
+        partitionIndex := partition(list, low, high)
+        quicksort(list, low, partitionIndex - 1)
+        quicksort(list, partitionIndex + 1, high)
+    end if
+end procedure
 
-   while True do
-      while A[++leftPointer] < pivot do
-         //do-nothing            
-      end while
-		
-      while rightPointer > 0 && A[--rightPointer] > pivot do
-         //do-nothing         
-      end while
-		
-      if leftPointer >= rightPointer
-         break
-      else                
-         swap leftPointer,rightPointer
-      end if
-		
-   end while 
-	
-   swap leftPointer,right
-   return leftPointer
-	
-end function
-
-procedure quickSort(left, right)
-
-   if right-left <= 0
-      return
-   else     
-      pivot = A[right]
-      partition = partitionFunc(left, right, pivot)
-      quickSort(left,partition-1)
-      quickSort(partition+1,right)    
-   end if		
-   
+procedure partition(list, low, high)
+    pivotValue := list[high] // could be replaced by alternative pivot selection methods
+    partitionIndex := low
+    for j := low to high - 1 do
+        if list[j] < pivotValue then
+            swap list[partitionIndex] with list[j]
+            partitionIndex++
+        end if
+    end for
+    swap list[partitionIndex] with list[hi]
+    return partitionIndex
 end procedure
 ```
 
