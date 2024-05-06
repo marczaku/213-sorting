@@ -118,7 +118,9 @@ Analogy: You want to visit a friend next town and you wonder how to get there ef
 Are greedy algorithms bad? No, they're essential! Algorithms that are not greedy often need to analyze every possible combination of a problem. In chess, that number is somewhere around 
 > 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 possible moves. 
 
-That's 10^110. In comparison, the amount of atoms in the observable universe is only estimated at 10^80. To be fair, the amount of typical chess moves is "only" around 10^40.
+That's 10^110. In comparison, the amount of atoms in the observable universe is only estimated at 10^80. 
+
+To be fair, the amount of typical chess moves is "only" around 10^40.
 
 But anyways, that number of possible combinations is literally impossible to calculate. Even 1 Million people on 1 Million Earths in 1 Million Galaxies, each using 1 Million Computers and looking at 1 Million states per second would still need 10^72 years. In comparison, the age of the universe is only 10^9 years. Just to give you some idea of what complexity we're talking about here. So, sometimes, greed is good after all :D
 
@@ -133,7 +135,7 @@ e.g. imagine an algorithm that only sorts by the first digit:
 Here, the order of both items with digit `5` has been maintained. This would be called a stable sorting algorithm.
 
 Some algorithms might end up with:
-- output: `5B, 5A, 7A`
+- output: `5A, 5B, 7A`
 
 Here, the order of items with the "same" value has changed. This would be called an unstable sorting algorithm.
 

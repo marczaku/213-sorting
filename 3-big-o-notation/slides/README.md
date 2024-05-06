@@ -1,6 +1,4 @@
-# Evaluation of Algorithms
-
-## Big O Notation
+# Big O Notation
 The Big-O Notation looks at the upper bound of a function. Common complexities are:
 
 <img width="98" alt="image" src="https://user-images.githubusercontent.com/7360266/151051143-ed284542-baf8-4e84-81f4-950571754efd.png">
@@ -35,7 +33,7 @@ O(n^2) - quadratic
 O(2^n) - exponential
 - grows 2x when size increases by 1
 
-## Evaluation of Sorting Algorithms
+# Evaluation of Sorting Algorithms
 Like most things in programming, there's no clear winner. You can look at:
 
 - the memory requirements. Can you afford extra memory consumption? This can give you speed gains.
@@ -49,7 +47,7 @@ Which one is more expensive? Comparison or Swaps?
 
 => Depends on your data!
 
-## Special cases
+# Special cases
 How does an Algorithm behave
 - in best case?
 - in worst case? (and how likely is that?)

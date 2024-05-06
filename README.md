@@ -48,16 +48,20 @@ That's how powerful sorted lists can be. And smart Algorithms. Now, that you hav
 - Implement `BubbleSort` and `SelectionSort` including Unit Tests.
 
 ## Excellent Criteria
-- Implement `QuickSort`
+- Implement `QuickSort` instead
 
 ## Bonus (Easy)
-- Compare the Speed of the algorithms using `System.Stopwatch`.
+- Compare the Speed of the algorithms using `System.Stopwatch` (C#) or `std::chrono::high_resolution_clock`.
   - For random, unsorted lists.
   - For reverse-sorted lists.
   - For sorted lists.
 
 ## Bonus (Hard)
-- Can you implement the Algorithms in a way that they work for your `TurboList`, but also a `System.Array`, a `System.Collections.Generic.List` and your `TurboLinkedList`? Hint: Use the Interface `System.Collections.Generic.IList<T>`
+- Can you implement the Algorithms in a way that they work for your `TurboList`, but also a `System.Array`, a `System.Collections.Generic.List` (C#) or `std::vector` (C++) and your `TurboLinkedList`?
+  - Hint (C#): Use the Interface `System.Collections.Generic.IList<T>`
+  - Hint (C++): Use Template Programming / Compile-time polymorphism
 
 ## Bonus (Hard)
-- Can you make the Algorithm Generic? Hint: Use the Interface `IComparable` or `IComparer`
+- Can you make the Algorithm Generic? Meaning, that it works for `List<int>` but also `List<char>` and `List<string>`?
+  - Hint (C#): Use the Interface `IComparable` or `IComparer`
+  - Hint (C++): It is actually a lot easier than in C#. As a bonus, you could look at modern C++ Feature named `concept`
