@@ -18,7 +18,7 @@ procedure bubbleSort( list : array of items )
 
    loop = list.count;
    
-   for i = 0 to loop-1 do:
+   for i = loop-1 to 0 do:
       swapped = false
 		
       for j = 0 to i do:
